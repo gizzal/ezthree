@@ -28,6 +28,13 @@
     <!-- Custom styles for this template -->
     <link href="css/new-age.min.css" rel="stylesheet">
 
+        <style>
+            .radius {
+                border-radius: 20px;
+            }
+      
+        </style>
+
   </head>
 
   <body id="page-top">
@@ -70,23 +77,27 @@
                   
               </a>
 -->
-              
 
+
+
+<!-- Cool Buttons -->            
+                                                       
 <div class="row">
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary col-6" data-toggle="modal" data-target="#dir">
-Choose directory
-</button>
+    <button type="button" class="btn btn-primary push-md-1 col-5 mr-2" data-toggle="modal" data-target="#dir">
+        Choose directory
+    </button>
 
-<button type="button" class="btn btn-primary col-6" data-toggle="modal" data-target="#local">
-Choose file
-</button>
+    <button type="button" class="btn btn-primary col-5" data-toggle="modal" data-target="#local">
+        Choose file
+    </button>
 </div>
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="dir" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
+    <div class="modal-content radius">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -96,7 +107,7 @@ Choose file
       <div class="modal-body">
         
         
-        
+        <img src="img/files.png" alt="" class="img-fluid">
         
         
       </div>
@@ -112,7 +123,7 @@ Choose file
  <!-- Modal -->
 <div class="modal fade" id="local" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
+    <div class="modal-content radius">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -122,7 +133,7 @@ Choose file
       <div class="modal-body">
         
         
-        
+        <img src="img/files2.png" alt="" class="img-fluid">
         
         
       </div>
@@ -307,34 +318,36 @@ Choose file
 =======
 <html>
 	<head>
-		<style>
-			body{
-				margin: 0;
-			}
-			canvas{
-				width: 100%;
-				height: 100%
-			}
-      #log1{
-        width:200px;
-        height:500px;
-        background-color:#0f0;
-        color:#f00;
-        position: absolute;
-        z-index: 99999;
-        right:100px;
-        top:100px;
-        font-weight: bold;
-
-      }
-		</style>
-		<script src="./js/three.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        canvas {
+            width: 100%;
+            height: 100%
+        }
+        
+        #log1 {
+            width: 200px;
+            height: 500px;
+            background-color: #0f0;
+            color: #f00;
+            position: absolute;
+            z-index: 99999;
+            right: 100px;
+            top: 100px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="./js/three.min.js"></script>
     <script src="./js/jquery.min.js"></script>
-		<script src="./js/jquery.pano.js"></script>
-	</head>
-	<body>
-		<!--<textarea id="log1"></textarea>-->
-		<div id="container"></div>
+    <script src="./js/jquery.pano.js"></script>
+</head>
+
+<body>
+    <!--<textarea id="log1"></textarea>-->
+    <div id="container"></div>
     <script src="./js/script.js"></script>
-	</body>
+</body>
 </html>
