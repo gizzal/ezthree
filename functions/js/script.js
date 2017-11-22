@@ -1,4 +1,11 @@
-var URL = './05.jpg';
+var URL = '05.jpg';
+
+var timer = setTimeout(function(){
+ $('#loader').fadeOut(500,function(){
+  $('#container').fadeIn(500);
+ });
+  
+},5000);
 
 THREE.ImageUtils.crossOrigin = '';
 var camera, scene, renderer,mesh;
